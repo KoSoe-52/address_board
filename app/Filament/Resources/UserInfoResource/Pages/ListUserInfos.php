@@ -14,6 +14,17 @@ class ListUserInfos extends ListRecords
     {
         return [
             Actions\CreateAction::make(),
+            Actions\Action::make('print')
+                ->label('Print')
+                ->icon('heroicon-o-printer')
+                ->url(route('print.userinfos'), shouldOpenInNewTab: true)
+                ->color('success'),
         ];
     }
+     public function printPage()
+    {
+        $this->dispatchBrowserEvent('print-window');
+    }
+
+    
 }
