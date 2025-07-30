@@ -41,7 +41,7 @@
         
         .card-header {
             text-align: center;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             padding-bottom: 10px;
             border-bottom: 1px solid #eee;
         }
@@ -74,7 +74,7 @@
         }
         
         .detail-item {
-            margin-bottom: 8px;
+            margin-bottom: 5px;
         }
         
         .detail-label {
@@ -98,7 +98,7 @@
             background-color: #f8f9fa;
             padding: 10px;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-top: 5px;
         }
         
         .print-button {
