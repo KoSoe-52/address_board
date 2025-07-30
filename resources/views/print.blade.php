@@ -166,6 +166,7 @@
                     @endif
                     <h3 class="card-title">{{ $card['name'] }}</h3>
                     <p class="card-subtitle">{{ $card['job_title'] }} - {{ $card['rank'] }}</p>
+                    <p class="card-subtitle" style="color:green">{{ $card['training_personnel'] }} </p>
                 </div>
                 
                 <div class="card-details">

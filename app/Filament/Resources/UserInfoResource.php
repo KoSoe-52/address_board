@@ -34,6 +34,16 @@ class UserInfoResource extends Resource
                 ])
                 ->native(false)
                 ->required(),
+                Forms\Components\Select::make('training_personnel')
+                ->label('Training Personnel')
+                ->options([
+                    'Administrator' => 'Administrator',
+                    'Instructor' => 'Instructor',
+                    'Trainees'   => 'Trainees',
+                    'Liaison'    => 'Liaison'
+                ])
+                ->native(false)
+                ->required(),
                 Forms\Components\TextInput::make('rank')
                     ->required()
                     ->maxLength(255),
@@ -77,6 +87,7 @@ class UserInfoResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('gender'),
+                Tables\Columns\TextColumn::make('training_personnel'),
                 Tables\Columns\TextColumn::make('rank')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('job_title')

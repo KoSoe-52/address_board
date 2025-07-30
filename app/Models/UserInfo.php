@@ -14,6 +14,6 @@ class UserInfo extends Model
         "unit","phone",
         "email","address",
         "nationality",
-        "image"
+        "image","training_personnel"
     ];
 }
