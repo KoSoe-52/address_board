@@ -39,7 +39,7 @@ class UserInfoResource extends Resource
                 ->options([
                     'Administrator' => 'Administrator',
                     'Instructor' => 'Instructor',
-                    'Trainees'   => 'Trainees',
+                    'Trainee'   => 'Trainee',
                     'Liaison'    => 'Liaison'
                 ])
                 ->native(false)
